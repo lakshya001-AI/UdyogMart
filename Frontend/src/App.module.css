@@ -1,0 +1,1233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.loginDiv1 {
+  width: 25vmax;
+  height: 30vmax;
+  background-color: black;
+  margin-right: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  position: relative;
+  background-image: url("https://media.istockphoto.com/id/508544915/photo/indian-women-weaving-textile.jpg?s=612x612&w=0&k=20&c=KQRtCF14d9AwMqMub4xl0wygiYTcXXzxS3Gq0aRlqTc=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loginDiv2 {
+  width: 25vmax;
+  height: 30vmax;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.createAccountDiv2 {
+  width: 25vmax;
+  height: 30vmax;
+  background-color: white;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.createAccountDiv2::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+}
+
+.createAccountDiv2::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 50px;
+}
+
+.createAccountDiv2::-webkit-scrollbar-thumb {
+  background: black; /* Scrollbar thumb color */
+  border-radius: 50px;
+}
+
+.createAccountDiv2::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar thumb color on hover */
+}
+
+.loginDiv2Para1 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.loginDiv2Para2 {
+  font-size: 31px;
+  font-weight: 700;
+  color: #ff9800;
+}
+
+.loginDiv2Para3 {
+  margin-top: 20px;
+}
+
+/* #ff9800 , #ffeb3b ,  */
+
+.loginDiv1Heading {
+  font-size: 50px;
+  margin-top: 55px;
+}
+
+.marketSpan {
+  color: #ff9800;
+  font-size: 70px;
+}
+
+.loginDiv1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the color and opacity for your overlay */
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.loginDiv1Heading {
+  position: relative;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+
+.martSpan {
+  color: black;
+}
+
+.emailLoginDiv {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.emailLoginDiv input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+
+.passwordLoginDiv {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.passwordLoginDiv input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+
+.loginBtnDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.loginBtnDiv button {
+  padding: 10px 70px;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  border-radius: 30px;
+  background-color: #ff9800;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.loginBtnDiv button:hover {
+  background-color: #fba21c;
+}
+
+.createAccountLink {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #fba21c;
+}
+
+.customToast {
+  background-color: #fba21c !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* ------------------- navbar --------------- */
+
+.navBarDiv {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoDiv p {
+  font-size: 26px;
+  color: #ff9900;
+  font-weight: 700;
+}
+
+.linkElement {
+  text-decoration: none;
+  margin-right: 40px;
+  color: black;
+  font-size: 18px;
+}
+
+.linkElement:hover {
+  padding-bottom: 2px;
+  border-bottom: solid 1px black;
+}
+
+.linkElementBulkBuyer {
+  text-decoration: none;
+  padding: 8px 30px;
+  background-color: #fba21c;
+  color: black;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.linkElementBulkBuyer:hover {
+  background-color: #f99600;
+}
+
+.otherElementsDiv {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.fontAwesomeLogo {
+  padding: 7px;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+/* ---- section 1 ----- */
+.section1 {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1InnerDiv {
+  width: 95%;
+  height: 25vmax;
+  margin-top: 40px;
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.section1InnerDiv1 {
+  width: 60%;
+  height: 100%;
+  padding: 20px 30px;
+  color: white;
+}
+
+.section1InnerDiv1Heading {
+  margin-left: 20px;
+  font-size: 51px;
+}
+
+.careSpan {
+  color: #f99600;
+}
+
+
+.section1InnerDiv1Para {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  color: #c4c4c4;
+  font-size: 15px;
+}
+
+.getStartedBtn {
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 0;
+  background-color: #ff9800;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.section1InnerDivImg {
+  width: 30%;
+  height: 80%;
+  margin-right: 60px;
+  border-radius: 30px;
+}
+
+/* ---- section 2 ----- */
+
+.section2 {
+  width: 100%;
+  height: 30vmax;
+  padding: 30px 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.section2InnerDiv1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.section2InnerDiv12 {
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section2InnerDiv2 {
+  width: 60%;
+  height: 100%;
+}
+
+.section2InnerDiv12Image {
+  width: 100%;
+  height: 70%;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.section2InnerDiv12Image21 {
+  width: 100%;
+  height: 70%;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 20px;
+}
+
+.section2InnerDiv12Image2 {
+  width: 80%;
+  height: 100%;
+  margin-left: -20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+
+.section2InnerDiv2Para {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section2InnerDiv2Heading {
+  font-size: 49px;
+}
+
+.section2InnerDiv2Heading1 {
+  font-size: 45px;
+}
+
+.section2InnerDiv2Para1 {
+  font-size: 15px;
+  margin-top: 20px;
+  color: rgb(53, 53, 53);
+  margin-right: 40px;
+}
+
+.readMoreBtn {
+  padding: 10px 30px;
+  border: 0;
+  background-color: #fda219;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin-top: 25px;
+}
+
+
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animatedImage {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.animatedImage.visible {
+  animation: slideIn 1s forwards;
+}
+
+
+/* ----- section 3 ----- */
+
+.section3 {
+  width: 100%;
+  height: 30vmax;
+  padding: 20px 65px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.section3InnerDiv1 {
+  width: 100%;
+}
+
+.section3InnerDiv2 {
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section3InnerDiv21 {
+  width: 30%;
+  height: 15vmax;
+  background-color: rgb(30, 30, 30);
+  margin-top: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px 20px;
+}
+
+.numberCircle {
+  width: 45px;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #f99600;
+}
+
+.numberCircle p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section3InnerDiv21Para {
+  color: #c4c4c4;
+  margin-left: 5px;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.animatedDiv {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animatedDiv.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideInFromBottom 0.9s ease-out forwards;
+}
+
+.animatedDiv.delay1 {
+  animation-delay: 0.2s;
+}
+
+.animatedDiv.delay2 {
+  animation-delay: 0.6s;
+}
+
+.animatedDiv.delay3 {
+  animation-delay: 0.9s;
+}
+
+
+/* ---- section 4 ---- */
+
+.section4 {
+  width: 100%;
+  height: 30vmax;
+  padding: 20px 65px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.section4InnerDiv1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.section4InnerDiv2 {
+  width: 60%;
+  height: 100%;
+}
+
+
+.section4InnerDiv12Image {
+  width: 100%;
+  height: 70%;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+.section2InnerDiv12Image3 {
+  width: 90%;
+  height: 35%;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 20px;
+}
+
+.section4InnerDiv12{
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animatedImage1 {
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.animatedImage1.visibleLeft {
+  animation: slideInFromLeft 1s ease-out forwards;
+  opacity: 1;
+}
+
+.animatedImage1.visibleRight {
+  animation: slideInFromRight 1s ease-out forwards;
+  opacity: 1;
+}
+
+
+/* ----- section 5 ----- */
+
+.section5{
+  width: 100%;
+  height: 30vmax;
+  padding: 20px 65px;
+  margin-top: 40px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section5InnerDivHeading{
+  width: 900px;
+  font-size: 45px;
+}
+
+.section5Div2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.section5Div21{
+  width: 48%;
+  height: 20vmax;
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px 30px;
+}
+
+.section2Div2Head{
+  width: fit-content;
+  font-size: 25px;
+  color: rgb(237, 237, 237);
+  padding-bottom: 5px;
+  border-bottom: solid 2px #f99600;
+  margin-bottom: 20px;
+}
+
+.section5Para{
+  color: #c4c4c4;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animatedDiv5 {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.visible5 {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 1;
+}
+
+
+.section5Para {
+  opacity: 0; /* Initial state before animation */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section5Para.visiblePara {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/* ----- Contact us Page ----- */
+
+.section1Contactus{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 65px;
+}
+
+.section1InnerDivContactus{
+  width: 70%;
+  height: 36vmax;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUsEmailDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contactUsInput{
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contactUsTextArea{
+  padding: 10px;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+  resize: none;
+}
+
+.contactUsSubmitBtn{
+  width: 10vmax;
+  padding: 10px;
+  background-color: #f99600;
+  border: 0;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+
+.contactUsSubmitBtn:hover{
+  background-color: #feb240;
+}
+
+
+/* ----- Product Page ------ */
+
+.section1ProductSection{
+  width: 100%;
+  padding: 20px 65px;
+  display: flex;
+  flex-direction: row;
+}
+
+.productDiv{
+  width: 20vmax;
+  border-radius: 20px;
+  margin-right: 20px;
+  background-color: #f1f1f1;
+}
+
+.productImage{
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.productName{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.productDescription{
+  margin-left: 10px;
+}
+
+.cityAndStateInfo{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.productPrice{
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.buyNowBtnDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.buyNowBtn{
+  width: 48%;
+  padding: 10px;
+  background-color: #f99600;
+  border: 0;
+  font-size: 15px;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.buyNowBtn:hover{
+  background-color: #ffaa2c;
+}
+
+.addToCartBtn{
+  width: 48%;
+  padding: 10px;
+  color: white;
+  background-color: rgb(49, 49, 49);
+  border: 0;
+  font-size: 15px;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.addToCartBtn:hover{
+  background-color: rgb(70, 69, 69);
+}
+
+
+/* ----- bulk buyer css ----- */
+
+.bulkBuyerFormDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 65px;
+}
+
+.bulkBuyerFormDiv1{
+  width: 50%;
+  height: 36vmax;
+  background-color: #f1f1f1;
+  padding: 20px 30px;
+  overflow-y: scroll;
+}
+
+.bulkBuyerFormDiv2{
+  width: 50%;
+  height: 36vmax;
+}
+
+.bulkBuyerHeading{
+  margin-bottom: 20px;
+}
+
+.inputDivBulkBuyer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.inputDivBulkBuyer input{
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+.submitBtnBulkBuyers{
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fda219;
+  cursor: pointer;
+}
+
+.noSellerFoundDiv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foundSellerDiv{
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px; 
+}
+
+.sellerDetailsDiv{
+  width: fit-content;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.sellerName{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sendRequestBtn{
+  width: 120px;
+  padding: 6px 10px;
+  margin-top: 15px;
+  background-color: #fda219;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.sendRequestBtn:hover{
+  background-color: #ff9900;
+}
+
+/* ----------- profile section ------------ */
+
+.section1Profile{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 65px;
+}
+
+.profileDivMain{
+  width: 100%;
+  height: 35vmax;
+  border: solid 2px black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInfoDiv{
+  width: 100%;
+  height: 10vmax;
+  background-color: #272727;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.userInfoDiv{
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+}
+
+.userNamePara{
+  color: white;
+  font-size: 41px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.userEmailPara{
+  color: rgb(178, 178, 178);
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.logoutBtnDiv{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutBtn{
+  padding: 10px 50px;
+  margin-left: 150px;
+  background-color: #fda219;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.logoutBtn:hover{
+  background-color: #feb240;
+}
+
+.addToCartAndOtherDetailDiv{
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px 30px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addToCartDiv{
+  width:45%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+.requestAcceptedDiv{
+  width: 25%;
+  height: 23vmax;
+  background-color: #f1f1f1;
+  margin-right: 15px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.rejectAccepted{
+  width: 25%;
+  height: 23vmax;
+  background-color: #f1f1f1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.orderHeading{
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(97, 97, 97);
+  padding-bottom: 3px;
+  border-bottom: solid 2px #fba21c;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.noAcceptedRequestDiv{
+  width: 100%;
+  height: 17vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requestItem{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.addToCartProductDiv{
+  width: 100%;
+  height: 10vmax;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.productImageDivAddToCart{
+  width: 35%;
+  height: 100%;
+}
+
+.addToCartImage{
+  width: 100%;
+  height: 100%;
+}
+
+.cartItemDetailsDiv{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productNameCart{
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.productDescriptionCart{
+  margin-left: 5px;
+}
+
+.productPriceCart{
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cartButtonsDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  margin-top: 5px;
+  justify-content: space-evenly;
+}
+
+.cartButtonsDiv button{
+  width: 45%;
+  padding: 3px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+
+/* Overlay for the modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is above all content */
+}
+
+/* Modal content box */
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px; /* Adjust based on the size you prefer */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* Above overlay */
+  text-align: center;
+}
+
+/* Form labels and input fields */
+.modalContent label {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.modalContent input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+/* Modal buttons */
+.modalButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.modalCancelBtn,
+.modalConfirmBtn {
+  width: 48%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Cancel button styling */
+.modalCancelBtn {
+  background-color: rgb(49, 49, 49); /* Red color */
+  color: white;
+}
+
+.modalCancelBtn:hover {
+  background-color: rgb(22, 22, 22);
+}
+
+/* Confirm button styling */
+.modalConfirmBtn {
+  background-color: #fda219; /* Green color */
+  color: white;
+}
+
+.modalConfirmBtn:hover {
+  background-color: #feb240;
+}
+
+.enterProductDetails{
+  margin-bottom: 20px;
+}
+
+.numberCircleAndHeading{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section3InnerDivOperationPara{
+  color: whitesmoke;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+
+
+
+
+
